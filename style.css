@@ -1,0 +1,36 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #f4f6f8; }
+
+#tableau {
+  display: grid;
+  grid-template-columns: repeat(18, 52px);
+  grid-template-rows: repeat(7, 56px) 20px repeat(2, 56px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.element {
+  color: #222;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.element small { font-size: 10px; }
+.element strong { font-size: 16px; }
+.element:hover { transform: scale(1.15); z-index: 1; }
+
+.alcalin { background: #ff8a80; }
+.alcalino-terreux { background: #ffb74d; }
+.transition { background: #fff176; }
+.pauvre { background: #b0bec5; }
+.metalloide { background: #a5d6a7; }
+.non-metal { background: #80deea; }
+.halogene { background: #81d4fa; }
+.gaz-noble { background: #ce93d8; }
+.lanthanide { background: #f48fb1; }
+.actinide { background: #b39ddb; }
+
+#details { font-size: 1.2rem; margin-top: 20px; min-height: 30px; }
